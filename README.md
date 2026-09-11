@@ -1,41 +1,16 @@
-# Data Structures Lab – Interactive C++ Hands-on Application
+# React + Vite
 
-## Objective
-Create an interactive C++ application that demonstrates fundamental data structures and algorithms through hands-on operations. The application is entirely menu-driven, letting students select data structures, perform operations, and visualize the output instantly.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Technologies
-* C++17
-* Object-Oriented Programming
-* Data Structures
-* Algorithms
-* CMake
+Currently, two official plugins are available:
 
-## Data Structures Covered
-* **Array**: Linear collection.
-* **Linked List**: Singly, Doubly, and Circular implementations.
-* **Stack**: Array-based implementation with LIFO semantics.
-* **Queue**: Array-based FIFO implementation.
-* **Tree**: Binary Search Tree implementation with traversals.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## How to Compile
+## React Compiler
 
-### Linux/macOS
-```bash
-mkdir build && cd build
-cmake ..
-make
-./data_structures
-```
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### Windows
-If using MinGW with CMake:
-```bash
-mkdir build
-cd build
-cmake -G "MinGW Makefiles" ..
-mingw32-make
-data_structures.exe
-```
+## Expanding the Oxlint configuration
 
-## Docker / Render Deployment
-A `Dockerfile` is provided that builds the executable.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
