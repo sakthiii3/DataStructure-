@@ -1,4 +1,5 @@
 #include "common.h"
+#include <cmath>
 #include "arrays.h"
 #include "linkedlist.h"
 #include "stack.h"
@@ -60,9 +61,9 @@ void complexityMenu() {
     while(cin >> n && n != 0) {
         cout << "n = " << n << "\n";
         cout << "O(1)        : 1\n";
-        cout << "O(log n)    : ~" << (n > 0 ? std::to_string((long long)(log2(n))) : "N/A") << "\n";
+        cout << "O(log n)    : ~" << (n > 0 ? std::to_string((long long)(std::log2(n))) : "N/A") << "\n";
         cout << "O(n)        : " << n << "\n";
-        cout << "O(n log n)  : ~" << (n > 0 ? std::to_string((long long)(n * log2(n))) : "N/A") << "\n";
+        cout << "O(n log n)  : ~" << (n > 0 ? std::to_string((long long)(n * std::log2(n))) : "N/A") << "\n";
         cout << "O(n^2)      : " << n * n << "\n";
         cout << "Enter 'n' to see approximate operations (0 to exit): ";
     }
