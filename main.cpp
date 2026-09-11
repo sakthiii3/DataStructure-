@@ -76,11 +76,6 @@ int main() {
     do {
         displayMainMenu();
         if (!(cin >> choice)) {
-            if (cin.eof()) {
-                cout << "\n[Non-interactive environment detected (EOF). Sleeping to keep process alive...]\n";
-                std::this_thread::sleep_for(std::chrono::hours(24*365));
-                break;
-            }
             clearInput();
             cout << "Invalid input. Please enter a number.\n";
             continue;
