@@ -1,8 +1,16 @@
 export default function Sidebar({ activeTab, setActiveTab }) {
   const menuItems = [
     { id: 'intro', label: 'Introduction' },
-    { id: 'stack', label: 'Stack Visualizer' },
-    { id: 'queue', label: 'Queue Visualizer' }
+    { id: 'array', label: 'Array' },
+    { id: 'linkedlist', label: 'Linked List' },
+    { id: 'stack', label: 'Stack' },
+    { id: 'queue', label: 'Queue' },
+    { id: 'tree', label: 'Binary Search Tree' },
+    { id: 'graph', label: 'Graph' },
+    { id: 'hashing', label: 'Hashing' },
+    { id: 'searching', label: 'Searching' },
+    { id: 'sorting', label: 'Sorting' },
+    { id: 'recursion', label: 'Recursion' }
   ];
 
   return (
