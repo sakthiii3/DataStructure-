@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 #include <limits>
+#include <cmath>
 
 // Utility function to clear input buffer when wrong input is given
 inline void clearInput() {
